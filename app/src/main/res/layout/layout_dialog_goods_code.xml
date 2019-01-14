@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/transparent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/qb_px_20">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/iv_code"
+                android:layout_width="@dimen/qb_px_170"
+                android:layout_height="@dimen/qb_px_170"
+                android:layout_margin="@dimen/qb_px_10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="@dimen/qb_px_14" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/qb_px_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="首付："
+                    android:textSize="@dimen/qb_px_14" />
+
+                <TextView
+                    android:id="@+id/tv_goodsDownPayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥0.00"
+                    android:textColor="@color/red_amt"
+                    android:textSize="@dimen/qb_px_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/qb_px_5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="余款："
+                    android:textSize="@dimen/qb_px_14" />
+
+                <TextView
+                    android:id="@+id/tv_goodsDownRepayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥0.00"
+                    android:textSize="@dimen/qb_px_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/qb_px_20"
+                    android:text="总价："
+                    android:textSize="@dimen/qb_px_14" />
+
+                <TextView
+                    android:id="@+id/tv_goodsBuyPice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥0.00"
+                    android:textSize="@dimen/qb_px_14" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_saveCode"
+            android:layout_width="@dimen/qb_px_240"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/qb_px_40"
+            android:background="@drawable/shape_button"
+            android:text="保存二维码"
+            android:textColor="@color/white"
+            android:textSize="@dimen/qb_px_14" />
+
+    </LinearLayout>
+</RelativeLayout>

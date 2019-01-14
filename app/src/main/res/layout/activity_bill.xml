@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar"></include>
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartResreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_back"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_order_cardviews"></include>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/qb_px_4"
+                android:background="@color/color_white"
+                android:paddingBottom="@dimen/qb_px_17"
+                android:paddingLeft="@dimen/qb_px_13"
+                android:paddingRight="@dimen/qb_px_13"
+                android:paddingTop="@dimen/qb_px_17">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="待结算（次日到账）"
+                    android:textColor="@color/textcolor_black"
+                    android:textSize="@dimen/qb_px_16" />
+
+                <TextView
+                    android:id="@+id/tv_settlementWait"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="￥0.00"
+                    android:textColor="@color/textcolor_black"
+                    android:textSize="@dimen/qb_px_16" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/qb_px_1"
+                android:background="@color/color_white"
+                android:paddingBottom="@dimen/qb_px_17"
+                android:paddingLeft="@dimen/qb_px_13"
+                android:paddingRight="@dimen/qb_px_13"
+                android:paddingTop="@dimen/qb_px_17">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已结算"
+                    android:textColor="@color/textcolor_black"
+                    android:textSize="@dimen/qb_px_16" />
+
+                <TextView
+                    android:id="@+id/tv_settlemented"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="￥0.00"
+                    android:textColor="@color/textcolor_black"
+                    android:textSize="@dimen/qb_px_16" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_settelmentType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/qb_px_1"
+                android:background="@color/color_white"
+                android:paddingBottom="@dimen/qb_px_17"
+                android:paddingLeft="@dimen/qb_px_13"
+                android:paddingRight="@dimen/qb_px_13"
+                android:paddingTop="@dimen/qb_px_17">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="结算方式"
+                    android:textColor="@color/textcolor_black"
+                    android:textSize="@dimen/qb_px_16" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未绑定"
+                        android:textColor="@color/textcolor_black"
+                        android:textSize="@dimen/qb_px_16" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/qb_px_5"
+                        android:src="@mipmap/right_xiao" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_settelmentBankCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/qb_px_1"
+                android:background="@color/color_white"
+                android:paddingBottom="@dimen/qb_px_17"
+                android:paddingLeft="@dimen/qb_px_13"
+                android:paddingRight="@dimen/qb_px_13"
+                android:paddingTop="@dimen/qb_px_17">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的银行卡"
+                    android:textColor="@color/textcolor_black"
+                    android:textSize="@dimen/qb_px_16" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_bankCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未绑定"
+                        android:textColor="@color/textcolor_black"
+                        android:textSize="@dimen/qb_px_16" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/qb_px_5"
+                        android:src="@mipmap/right_xiao" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_settelmentWechat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/qb_px_1"
+                android:background="@color/color_white"
+                android:paddingBottom="@dimen/qb_px_17"
+                android:paddingLeft="@dimen/qb_px_13"
+                android:paddingRight="@dimen/qb_px_13"
+                android:paddingTop="@dimen/qb_px_17">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的微信"
+                    android:textColor="@color/textcolor_black"
+                    android:textSize="@dimen/qb_px_16" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_wxCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未绑定"
+                        android:textColor="@color/textcolor_black"
+                        android:textSize="@dimen/qb_px_16" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/qb_px_5"
+                        android:src="@mipmap/right_xiao" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

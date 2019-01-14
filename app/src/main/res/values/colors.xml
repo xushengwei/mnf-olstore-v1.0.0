@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--白色-->
+    <color name="color_white">#FFFFFFFF</color>
+    <!--白色-->
+    <color name="color_light_gray">#DDDDDD</color>
+    <!--黑色半透明-->
+    <color name="color_dark_transparent">#88333333</color>
+    <!--全透明-->
+    <color name="color_transparent">#00000000</color>
+    <!--橙色-->
+    <color name="color_orange">#f59405</color>
+    <!--橘红色-->
+    <color name="color_red">#f44022</color>
+    <!--灰色背景色-->
+    <color name="gray_back">#f3f4f6</color>
+
+    <color name="black">#000000</color>
+    <color name="textcolor_black">#333333</color>
+    <color name="textcolor_gray">#666666</color>
+
+    <color name="cardview_main_1">#E0372C</color>
+    <color name="cardview_main_2">#F39028</color>
+    <color name="cardview_main_3">#3798E6</color>
+    <color name="cardview_main_4">#ED567B</color>
+
+    <color name="item_edit_bg">#F6A349</color>
+    <color name="item_delt_bg">#CC3C3D</color>
+
+    <color name="red_storke">#FFCCCB</color>
+
+    <color name="button_start">#F86A50</color>
+    <color name="button_end">#F9465B</color>
+
+    <color name="light_red">#FBF2F2</color>
+    <color name="red_amt">#F9465B</color>
+    <color name="gray_dc">#DCDCDC</color>
+</resources>

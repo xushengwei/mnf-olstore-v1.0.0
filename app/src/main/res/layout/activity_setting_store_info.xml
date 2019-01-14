@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar"></include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_back"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_50"
+            android:layout_marginTop="@dimen/qb_px_4"
+            android:background="@color/color_white"
+            android:paddingLeft="@dimen/qb_px_12"
+            android:paddingRight="@dimen/qb_px_12">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="店铺编号"
+                android:textColor="@color/textcolor_black"
+                android:textSize="@dimen/qb_px_16" />
+
+            <TextView
+                android:id="@+id/tv_storeNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="000-000-000"
+                android:textColor="@color/textcolor_black"
+                android:textSize="@dimen/qb_px_16" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_50"
+            android:layout_marginTop="@dimen/qb_px_1"
+            android:background="@color/color_white"
+            android:paddingLeft="@dimen/qb_px_12"
+            android:paddingRight="@dimen/qb_px_12">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="店铺名称"
+                android:textColor="@color/textcolor_black"
+                android:textSize="@dimen/qb_px_16" />
+
+            <EditText
+                android:maxLength="30"
+                android:singleLine="true"
+                android:gravity="right"
+                android:id="@+id/et_storeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:hint="请填写店铺名称"
+                android:textColor="@color/textcolor_black"
+                android:textSize="@dimen/qb_px_16" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_50"
+            android:layout_marginTop="@dimen/qb_px_1"
+            android:background="@color/color_white"
+            android:paddingLeft="@dimen/qb_px_12"
+            android:paddingRight="@dimen/qb_px_12">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="店铺地址"
+                android:textColor="@color/textcolor_black"
+                android:textSize="@dimen/qb_px_16" />
+
+            <EditText
+                android:maxLength="30"
+                android:singleLine="true"
+                android:gravity="right"
+                android:id="@+id/et_storeAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:hint="请填写店铺地址"
+                android:textColor="@color/textcolor_black"
+                android:textSize="@dimen/qb_px_16" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/qb_px_12"
+            android:text="店内二维码"
+            android:textColor="@color/textcolor_black"
+            android:textSize="@dimen/qb_px_16" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_50"
+            android:background="@color/color_white"
+            android:paddingLeft="@dimen/qb_px_12"
+            android:paddingRight="@dimen/qb_px_12">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="0931"
+                android:textColor="@color/textcolor_black"
+                android:textSize="@dimen/qb_px_16" />
+
+            <TextView
+                android:id="@+id/tv_codeA"
+                android:layout_width="@dimen/qb_px_80"
+                android:layout_height="@dimen/qb_px_35"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_item_storke_red"
+                android:gravity="center"
+                android:text="下载海报"
+                android:textColor="@color/red_amt"
+                android:textSize="@dimen/qb_px_12" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_50"
+            android:layout_marginTop="@dimen/qb_px_1"
+            android:background="@color/color_white"
+            android:paddingLeft="@dimen/qb_px_12"
+            android:paddingRight="@dimen/qb_px_12">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="0932"
+                android:textColor="@color/textcolor_black"
+                android:textSize="@dimen/qb_px_16" />
+
+            <TextView
+                android:id="@+id/tv_codeB"
+                android:layout_width="@dimen/qb_px_80"
+                android:layout_height="@dimen/qb_px_35"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_item_storke_red"
+                android:gravity="center"
+                android:text="下载台历"
+                android:textColor="@color/red_amt"
+                android:textSize="@dimen/qb_px_12" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_50"
+            android:layout_marginTop="@dimen/qb_px_1"
+            android:background="@color/color_white"
+            android:paddingLeft="@dimen/qb_px_12"
+            android:paddingRight="@dimen/qb_px_12">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="0933"
+                android:textColor="@color/textcolor_black"
+                android:textSize="@dimen/qb_px_16" />
+
+            <TextView
+                android:id="@+id/tv_codeC"
+                android:layout_width="@dimen/qb_px_80"
+                android:layout_height="@dimen/qb_px_35"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_item_storke_red"
+                android:gravity="center"
+                android:text="下载二维码"
+                android:textColor="@color/red_amt"
+                android:textSize="@dimen/qb_px_12" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/qb_px_20"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="34dp"
+                android:background="@drawable/shape_button"
+                android:text="保存"
+                android:textColor="@color/color_white"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

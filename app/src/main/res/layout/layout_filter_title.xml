@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:id="@+id/item_ll_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:textColor="@color/red_amt"
+                android:textSize="@dimen/qb_px_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加时间" />
+
+            <ImageView
+                android:layout_marginLeft="@dimen/qb_px_5"
+                android:id="@+id/iv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/filter_down" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:id="@+id/item_ll_sales"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_sales"
+                android:textColor="@color/textcolor_black"
+                android:textSize="@dimen/qb_px_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="销量" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:id="@+id/item_ll_volume"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_volume"
+                android:textColor="@color/textcolor_black"
+                android:textSize="@dimen/qb_px_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="成交额" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_back" />
+</LinearLayout>

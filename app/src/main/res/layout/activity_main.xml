@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartResreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.mshd.olstore.widget.ObservableScrollView
+                    android:id="@+id/scrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_back">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/qb_px_216">
+
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/ll_dz_item"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/qb_px_16"
+                            android:layout_marginRight="@dimen/qb_px_16"
+                            android:layout_marginTop="@dimen/qb_px_10"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/cardview_order_manager"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/qb_px_80"
+                                android:layout_marginBottom="@dimen/qb_px_4"
+                                android:layout_marginRight="@dimen/qb_px_4"
+                                android:layout_weight="1"
+                                app:cardBackgroundColor="@color/cardview_main_1"
+                                app:cardCornerRadius="@dimen/qb_px_9"
+                                app:cardElevation="@dimen/qb_px_4">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:drawablePadding="@dimen/qb_px_5"
+                                    android:drawableTop="@mipmap/cardview_order"
+                                    android:gravity="center"
+                                    android:text="订单管理"
+                                    android:textColor="@color/color_white"
+                                    android:textSize="12sp" />
+
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/cardview_bill"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/qb_px_80"
+                                android:layout_marginBottom="@dimen/qb_px_4"
+                                android:layout_marginLeft="@dimen/qb_px_8"
+                                android:layout_marginRight="@dimen/qb_px_4"
+                                android:layout_weight="1"
+                                app:cardBackgroundColor="@color/cardview_main_2"
+                                app:cardCornerRadius="@dimen/qb_px_9"
+                                app:cardElevation="@dimen/qb_px_4">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:drawablePadding="@dimen/qb_px_5"
+                                    android:drawableTop="@mipmap/cardview_bill"
+                                    android:gravity="center"
+                                    android:text="收入流水"
+                                    android:textColor="@color/color_white"
+                                    android:textSize="12sp" />
+
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/cardview_goods_manager"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/qb_px_80"
+                                android:layout_marginBottom="@dimen/qb_px_4"
+                                android:layout_marginLeft="@dimen/qb_px_8"
+                                android:layout_marginRight="@dimen/qb_px_4"
+                                android:layout_weight="1"
+                                app:cardBackgroundColor="@color/cardview_main_3"
+                                app:cardCornerRadius="@dimen/qb_px_9"
+                                app:cardElevation="@dimen/qb_px_4">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:drawablePadding="@dimen/qb_px_5"
+                                    android:drawableTop="@mipmap/cardview_goods"
+                                    android:gravity="center"
+                                    android:text="商品管理"
+                                    android:textColor="@color/color_white"
+                                    android:textSize="12sp" />
+
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/cardview_clerk_manager"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/qb_px_80"
+                                android:layout_marginBottom="@dimen/qb_px_4"
+                                android:layout_marginLeft="@dimen/qb_px_8"
+                                android:layout_marginRight="@dimen/qb_px_4"
+                                android:layout_weight="1"
+                                app:cardBackgroundColor="@color/cardview_main_4"
+                                app:cardCornerRadius="@dimen/qb_px_9"
+                                app:cardElevation="@dimen/qb_px_4">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:drawablePadding="@dimen/qb_px_5"
+                                    android:drawableTop="@mipmap/cardview_clerk"
+                                    android:gravity="center"
+                                    android:text="店员管理"
+                                    android:textColor="@color/color_white"
+                                    android:textSize="12sp" />
+
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="@dimen/qb_px_10"
+                                    android:layout_marginLeft="@dimen/qb_px_12"
+                                    android:layout_marginRight="@dimen/qb_px_16"
+                                    android:layout_marginTop="@dimen/qb_px_12"
+                                    app:cardCornerRadius="@dimen/qb_px_10">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <include layout="@layout/layout_mian_recycleview_hearder"></include>
+
+                                        <android.support.v7.widget.RecyclerView
+                                            android:id="@+id/recycleView"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/color_white"
+                                            android:paddingBottom="@dimen/qb_px_10">
+
+
+                                        </android.support.v7.widget.RecyclerView>
+                                    </LinearLayout>
+                                </android.support.v7.widget.CardView>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/qb_px_8"
+                                android:layout_marginTop="@dimen/qb_px_24"
+                                android:background="@mipmap/bill_hearder">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:paddingBottom="@dimen/qb_px_2"
+                                    android:text="今日流水"
+                                    android:textColor="@color/color_white"
+                                    android:textSize="16sp" />
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/qb_px_20"
+                            android:layout_marginTop="@dimen/qb_px_20"></View>
+
+                    </LinearLayout>
+
+
+                </com.mshd.olstore.widget.ObservableScrollView>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/lv_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/qb_px_158"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/main_header" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/qb_px_135"
+                    android:layout_marginBottom="@dimen/qb_px_5"
+                    android:layout_marginLeft="@dimen/qb_px_16"
+                    android:layout_marginRight="@dimen/qb_px_16"
+                    android:layout_marginTop="@dimen/qb_px_72"
+                    android:background="@color/color_white"
+                    app:cardCornerRadius="@dimen/qb_px_5"
+                    app:cardElevation="@dimen/qb_px_5">
+
+                    <LinearLayout
+                        android:id="@+id/rl_cardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/qb_px_12"
+                            android:layout_marginRight="@dimen/qb_px_12"
+                            android:layout_marginTop="@dimen/qb_px_20">
+
+                            <ImageView
+                                android:id="@+id/iv_userIcon"
+                                android:layout_width="@dimen/qb_px_50"
+                                android:layout_height="@dimen/qb_px_50"
+                                android:layout_centerVertical="true"
+                                android:src="@mipmap/ic_launcher" />
+
+                            <TextView
+                                android:id="@+id/tv_userName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/qb_px_12"
+                                android:layout_toRightOf="@+id/iv_userIcon"
+                                android:text="张三丰" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/qb_px_12"
+                                android:layout_toLeftOf="@+id/switchView"
+                                android:text="语音播报" />
+
+                            <ch.ielse.view.SwitchView
+                                android:id="@+id/switchView"
+                                android:layout_width="@dimen/qb_px_44"
+                                android:layout_height="@dimen/qb_px_26"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/qb_px_16"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_totalIncome"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="￥0.00"
+                                    android:textColor="@color/textcolor_black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="累计收入"
+                                    android:textColor="@color/textcolor_gray"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="@dimen/qb_px_1"
+                                android:layout_height="@dimen/qb_px_24"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/color_light_gray" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_todayIncome"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="￥0.00"
+                                    android:textColor="@color/textcolor_black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="今日收入"
+                                    android:textColor="@color/textcolor_gray"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="@dimen/qb_px_1"
+                                android:layout_height="@dimen/qb_px_24"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/color_light_gray" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_totalCustomer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="0"
+                                    android:textColor="@color/textcolor_black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="客户总数"
+                                    android:textColor="@color/textcolor_gray"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="@dimen/qb_px_1"
+                                android:layout_height="@dimen/qb_px_24"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/color_light_gray" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_todayCustomer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="0"
+                                    android:textColor="@color/textcolor_black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="今日获客"
+                                    android:textColor="@color/textcolor_gray"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+            <include layout="@layout/layout_toolbar" />
+
+        </RelativeLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</RelativeLayout>

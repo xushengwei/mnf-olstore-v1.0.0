@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar"></include>
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartResreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_back"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_order_cardviews"></include>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/qb_px_12">
+
+                <TextView
+                    android:id="@+id/tv_seltDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/shape_white_corners"
+                    android:drawablePadding="@dimen/qb_px_12"
+                    android:drawableRight="@mipmap/selt_gray_xia"
+                    android:paddingBottom="@dimen/qb_px_8"
+                    android:paddingLeft="@dimen/qb_px_16"
+                    android:paddingRight="@dimen/qb_px_16"
+                    android:paddingTop="@dimen/qb_px_8"
+                    android:text="1月1日"
+                    android:textColor="@color/textcolor_black" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/qb_px_30"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/shape_item_storke_red"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_day"
+                        android:layout_width="@dimen/qb_px_45"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_rb_date_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="按天"
+                        android:textColor="@drawable/selector_rb_date_textcolor" />
+
+                    <RadioButton
+                        android:id="@+id/rb_month"
+                        android:layout_width="@dimen/qb_px_45"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_rb_date_bg"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="按月"
+                        android:textColor="@drawable/selector_rb_date_textcolor" />
+                </RadioGroup>
+
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_white"></android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

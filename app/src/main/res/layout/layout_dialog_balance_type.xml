@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_corners"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_bankCard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_50"
+        android:background="@color/gray_back"
+        android:paddingLeft="@dimen/qb_px_16"
+        android:paddingRight="@dimen/qb_px_29">
+
+        <ImageView
+            android:id="@+id/iv_bank"
+            android:layout_width="@dimen/qb_px_19"
+            android:layout_height="@dimen/qb_px_19"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/cb_bg_checked" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="银行卡"
+            android:textColor="@color/textcolor_black"
+            android:textSize="@dimen/qb_px_16" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_wechatUser"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_50"
+        android:layout_marginTop="@dimen/qb_px_1"
+        android:background="@color/gray_back"
+        android:paddingLeft="@dimen/qb_px_16"
+        android:paddingRight="@dimen/qb_px_29">
+
+        <ImageView
+            android:id="@+id/iv_wechat"
+            android:layout_width="@dimen/qb_px_19"
+            android:layout_height="@dimen/qb_px_19"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/cb_bg_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="微信账号"
+            android:textColor="@color/textcolor_black"
+            android:textSize="@dimen/qb_px_16" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/qb_px_16"
+        android:paddingTop="@dimen/qb_px_16">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="@dimen/qb_px_120"
+            android:layout_height="@dimen/qb_px_40"
+            android:background="@color/color_light_gray"
+            android:gravity="center"
+            android:text="取消" />
+
+        <TextView
+            android:id="@+id/tv_comt"
+            android:textColor="@color/color_white"
+            android:layout_width="@dimen/qb_px_120"
+            android:layout_height="@dimen/qb_px_40"
+            android:layout_marginLeft="@dimen/qb_px_22"
+            android:background="@drawable/shape_button"
+            android:gravity="center"
+            android:text="确定" />
+    </LinearLayout>
+</LinearLayout>

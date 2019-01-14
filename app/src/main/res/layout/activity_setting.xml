@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar"></include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_back"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rl_storeInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/qb_px_4"
+            android:background="@color/color_white"
+            android:paddingBottom="@dimen/qb_px_17"
+            android:paddingLeft="@dimen/qb_px_13"
+            android:paddingRight="@dimen/qb_px_13"
+            android:paddingTop="@dimen/qb_px_17">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="店铺信息设置"
+                android:textColor="@color/textcolor_black"
+                android:textSize="@dimen/qb_px_14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/right_xiao" />
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/qb_px_1"
+            android:background="@color/color_white"
+            android:paddingBottom="@dimen/qb_px_17"
+            android:paddingLeft="@dimen/qb_px_13"
+            android:paddingRight="@dimen/qb_px_13"
+            android:paddingTop="@dimen/qb_px_17">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关于我们"
+                android:textColor="@color/textcolor_black"
+                android:textSize="@dimen/qb_px_14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/right_xiao" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/qb_px_40"
+            android:background="@color/color_white"
+            android:paddingBottom="@dimen/qb_px_17"
+            android:paddingLeft="@dimen/qb_px_13"
+            android:paddingRight="@dimen/qb_px_13"
+            android:paddingTop="@dimen/qb_px_17">
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="退出登录"
+                android:textColor="@color/textcolor_black"
+                android:textSize="@dimen/qb_px_14" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
